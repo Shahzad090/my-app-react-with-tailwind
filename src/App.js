@@ -15,16 +15,20 @@ function App() {
       });
   };
 
-};
-  const postApiData () =>  {
+
+  const postApiData = () =>  {
     axios
     .post("https://jsonplaceholder.typicode.com/posts", {
       body: "abc",
-      title: "ahj"
+      title: "ahj",
       userID: 100,
       })
       .then((res) => {
-        console.log(res);
+        console.log(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      })
 
   return (
     <>
@@ -35,7 +39,7 @@ function App() {
       </div>
                
     </>
-  );
-}
+  )
+};
 
 export default App;
