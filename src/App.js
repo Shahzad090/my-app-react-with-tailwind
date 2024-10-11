@@ -3,6 +3,7 @@ import axios from "axios";
 import "./App.css";
 import "./index.css";
 
+
 function App() {
   const getApiData = () => {
     axios 
@@ -28,18 +29,17 @@ function App() {
       })
       .catch((err) => {
         console.log(err);
-      })
-
+      });
+    }
   return (
     <>
       <div>
         <NavbarCom />
         <button onClick={ getApiData }>get data</button>
         <button onClick={ postApiData }>post data</button>
-      </div>
-               
+      </div>  
     </>
   )
-};
 
-export default App;
+
+export default App;   
