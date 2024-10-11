@@ -1,19 +1,41 @@
-import NavbarCom from './Layout/NavbarCom';
-import './App.css';
-import './index.css';
+import NavbarCom from "./Layout/NavbarCom";
+import axios from "axios";
+import "./App.css";
+import "./index.css";
 
 function App() {
+  const getApiData = () => {
+    axios 
+      .get("https://jsonplaceholder.typicode.com/posts",)
+      .then((res) => {
+        console.log(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+};
+  const postApiData () =>  {
+    axios
+    .post("https://jsonplaceholder.typicode.com/posts", {
+      body: "abc",
+      title: "ahj"
+      userID: 100,
+      })
+      .then((res) => {
+        console.log(res);
+
   return (
     <>
-    <div>
-    
-      
-      
-      <NavbarCom />
-    </div>
-    
-    </>
-  )
+      <div>
+        <NavbarCom />
+        <button onClick={ getApiData }>get data</button>
+        <button onClick={ postApiData }>post data</button>
+      </div>
+               
+    </>
+  );
 }
 
 export default App;
