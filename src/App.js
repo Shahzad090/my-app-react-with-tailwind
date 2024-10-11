@@ -36,7 +36,7 @@ function App() {
       <div>
         <NavbarCom />
         <button onClick={ getApiData }>get data</button>
-        <button onClick={ postApiData }>post dat</button>
+        <button onClick={ postApiData }>post data</button>
       </div>  
     </>
   )
