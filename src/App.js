@@ -17,7 +17,7 @@ function App() {
   };
 
 
-  const postApiData = () =>  {
+  const postApiData = () =>  
     axios
     .post("https://jsonplaceholder.typicode.com/posts", {
       body: "abc",
@@ -30,7 +30,7 @@ function App() {
       .catch((err) => {
         console.log(err);
       });
-    }
+    
   return (
     <>
       <div>
