@@ -7,7 +7,7 @@ const NavbarCom = () => {
             <div className="text-white text-3xl font-bold">My Website</div>
   
             <div className="flex space-x-8">
-              <a href="#home" className="text-white hover:text-gray-400">H</a>
+              <a href="#home" className="text-white hover:text-gray-400"></a>
               <a href="#shop" className="text-white hover:text-gray-400">items</a>
               <a href="#contact" className="text-white hover:text-gray-400">Contact Us</a>
               <a href="#about" className="text-white hover:text-gray-400">About Us</a>
