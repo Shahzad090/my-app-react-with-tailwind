@@ -2,14 +2,19 @@ import NavbarCom from "./Layout/NavbarCom";
 import axios from "axios";
 import "./App.css";
 import "./index.css";
+import { useState } from "react"
 
 
 function App() {
+  const [postData, setPostData] = useState([]);
+  const [showLoader, setshowLoader] = useState([true]);
   const getApiData = () => {
     axios 
       .get("https://jsonplaceholder.typicode.com/posts",)
       .then((res) => {
         console.log(res.data);
+        setPostData(...res.data);
+        setshowLoader(false);
       })
       .catch((err) => {
         console.log(err);
@@ -40,6 +45,6 @@ function App() {
       </div>  
     </>
   )
-
+}
 
 export default App;   
