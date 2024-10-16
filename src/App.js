@@ -3,6 +3,7 @@ import axios from "axios";
 import "./App.css";
 import "./index.css";
 import { useState } from "react";
+// import { Button } from "antd";
 
 function App() {
   const [postData, setPostData] = useState([]);
@@ -59,6 +60,8 @@ function App() {
         <NavbarCom />
         <button onClick={getApiData}>get data</button>
         <button onClick={postApiData}>post data</button>
+        <button onClick={editData}>edit data</button>
+        <button onClick={deleteData}>delete data</button>
       </div>
         
     </>
