@@ -38,7 +38,7 @@ function App() {
   const editData = () => {
     axios.put("https://jsonplaceholder.typicode.com/posts/1"),
       {
-        title: "abc",
+        title: "ab",
         body: "xyz",
       };
   };
