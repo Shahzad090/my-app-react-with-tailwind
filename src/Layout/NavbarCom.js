@@ -4,7 +4,7 @@ const NavbarCom = () => {
   return (
         <nav className="bg-black p-4">
           <div className="flex justify-between items-center">
-            <div className="text-white text-3xl font-bold">My Web</div>
+            <div className="text-white text-3xl font-bold">My We</div>
   
             <div className="flex space-x-8">
               <a href="#home" className="text-white hover:text-gray-400">Home</a>
