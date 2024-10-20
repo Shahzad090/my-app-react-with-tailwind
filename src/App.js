@@ -14,7 +14,7 @@ function App() {
       .then((res) => {
         console.log(res.data);
         setPostData(...res.data);
-        setshowLoader(fal);
+        setshowLoader(fals);
       })
       .catch((err) => {
         console.log(err);
