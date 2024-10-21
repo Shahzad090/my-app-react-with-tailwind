@@ -39,7 +39,7 @@ function App() {
     axios.put("https://jsonplaceholder.typicode.com/posts/1"),
       {
         title: "abc",
-        body: "xyz",
+        body: "xy",
       };
   };
 
